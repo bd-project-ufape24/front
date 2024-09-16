@@ -1,12 +1,12 @@
 export const questionsContent = [
-    { question: 1, text: 'Liste o nome, a descrição e o preço mínimo dos produtos fornecidos por fornecedores japoneses que possuem uma quantidade em estoque maior do que 120 em todos os armazéns da empresa.' },
-    { question: 2, text: 'Liste o nome, limite de crédito, cidade e estado dos clientes americanos que já realizaram mais de 20 pedidos com o valor total de cada pedido maior do que 10.000 e que nunca compraram produtos da categoria “Smartphone”.' },
-    { question: 3, text: 'Liste o nome e o endereço dos armazéns que possuem pelo menos 200 estoques de produtos da categoria “eletrodomésticos” e que possuem menos de 1000 estoques no total.' },
-    { question: 4, text: 'Liste a quantidade e a média da quantidade de produtos em cada estoque que possui pelo menos 200 produtos, agrupados pelo armazém, código do estoque e categoria do produto.' },
-    { question: 5, text: 'Liste as 8 categorias de produto que produziram o maior faturamento para a empresa nos últimos seis meses de cada um dos últimos 5 anos.' },
-    { question: 6, text: 'Texto da questão 6' },
-    { question: 7, text: 'Texto da questão 7' },
-    { question: 8, text: 'Texto da questão 8' },
-    { question: 9, text: 'Texto da questão 9' },
-    { question: 10, text: 'Texto da questão 10' }
-  ];
+  { question: 1, text: 'Liste o nome, a descrição e o preço mínimo dos produtos fornecidos por fornecedores japoneses que possuem uma quantidade em estoque maior do que 120 em todos os armazéns da empresa.' },
+  { question: 2, text: 'Liste o nome, limite de crédito, cidade e estado dos clientes americanos que já realizaram mais de 20 pedidos com o valor total de cada pedido maior do que 10.000 e que nunca compraram produtos da categoria “Smartphone”.' },
+  { question: 3, text: 'Liste o nome e o endereço dos armazéns que possuem pelo menos 200 estoques de produtos da categoria “eletrodomésticos” e que possuem menos de 1000 estoques no total.' },
+  { question: 4, text: 'Liste a quantidade e a média da quantidade de produtos em cada estoque que possui pelo menos 200 produtos, agrupados pelo armazém, código do estoque e categoria do produto.' },
+  { question: 5, text: 'Liste as 8 categorias de produto que produziram o maior faturamento para a empresa nos últimos seis meses de cada um dos últimos 5 anos.' },
+  { question: 6, text: 'Qual a quantidade e o percentual de pedidos com o valor total maior que 600, encomendados de maneira presencial nos últimos 8 meses do ano 2023, encomendados por clientes americanos com limite de crédito maior que 600?' },
+  { question: 7, text: 'Liste o nome, a data de garantia e todas as descrições dos produtos cuja diferença entre o preço de venda e o preço de venda mínimo é menor que 2000 e que estão armazenados em pelo menos 5 armazéns distintos.' },
+  { question: 8, text: 'Para cada produto, liste o preço de tabela do produto, o preço mínimo de venda do produto e o valor de mínimo que o produto já foi vendido em 2024 ou em 2023.' },
+  { question: 9, text: 'Qual é a quantidade e o percentual de clientes que realizaram compras no ano 2023, que possuem limite de crédito maior que 700 e residem nos estados unidos? (a porcentagem deve ser calculada em relação a quantidade total de clientes que realizaram compras em 2023).' },
+  { question: 10, text: 'Liste o nome completo e o endereço dos clientes americanos que realizaram um total de compras superior a 50 mil em cada um dos seguintes anos: 2024, 2023 e 2021 e que nunca realizaram compras de produtos de mais de uma categoria em uma mesma compra.' }
+];
