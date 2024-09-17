@@ -16,9 +16,38 @@ export const BoxContent = ({ question, text, result, loading, onExecute }) => {
     setShowResult(true);
   };
 
+  const renderTable = (data) => {
+    if (!data || !Array.isArray(data) || data.length === 0) {
+      return <p>Sem dados para exibir.</p>;
+    }
+
+    const headers = Object.keys(data[0]);
+
+    return (
+      <table className="table table-bordered">
+        <thead>
+          <tr>
+            {headers.map((header) => (
+              <th key={header}>{header}</th>
+            ))}
+          </tr>
+        </thead>
+        <tbody>
+          {data.map((item, index) => (
+            <tr key={index}>
+              {headers.map((header) => (
+                <td key={header}>{item[header] ?? ' - '}</td>
+              ))}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    );
+  };
+
   return (
-    <div className="col-md-3 mb-4 d-flex">
-      <div className="card h-100 d-flex flex-column">
+    <div className="col-md-6 mb-4 d-flex">
+      <div className="card h-100 d-flex flex-column md">
         <div className="card-body d-flex flex-column flex-grow-1">
           <h5 className="card-title">Questão {question}</h5>
           <h6 className="card-subtitle mb-2 text-muted">Descrição da Questão</h6>
@@ -30,13 +59,12 @@ export const BoxContent = ({ question, text, result, loading, onExecute }) => {
 
           {showResult && (
             <>
-              <h6>Resultado da consulta:</h6>
               {loading ? (
                 <p>Carregando...</p>
               ) : (
                 <div className="result-container">
-                  {result ? (
-                    <pre>{JSON.stringify(result, null, 2)}</pre>
+                  {Array.isArray(result) ? (
+                    renderTable(result)
                   ) : (
                     <p>Erro ao carregar os dados.</p>
                   )}
